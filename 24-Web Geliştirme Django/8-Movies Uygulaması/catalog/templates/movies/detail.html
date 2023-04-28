@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-3">
+            <img class="card-img" src="{% static movies.get_image_path %}" alt="">
+        </div>
+        <div class="col-md-9">
+            <h1>{{movies.name}}</h1>
+            <hr>
+            <p>
+                {{movies.description}}
+            </p>
+        </div>
+    </div>
+{% endblock %}
